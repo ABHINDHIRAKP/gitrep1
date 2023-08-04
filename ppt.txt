@@ -82,7 +82,7 @@
     </section>
 
     <section id="about">
-      <h2>About Us</h2>
+      <h2>About you</h2>
       <p>At Food country, we believe that food is not just about sustenance; it's an experience
          that brings people together.With a vision to create a place where flavors from around 
          the world converge and guests feel at home.At food country, we are committed to providing
