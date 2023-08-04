@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOOD COUNTRY</title>
+  <style>
+    /* Reset some default styles for consistency */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url("C:\Users\starl\Desktop\add\background 1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* Additional Styles */
+    #home, #about, #services, #contact {
+      display: none;
+    }
+
+    #home.show, #about.show, #services.show, #contact.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FOOD COUNTRY</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('services')">Services</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="show">
+      <h2>Welcome to our Organization!</h2>
+      <p>This is the homepage of our organization's website.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Food country, we believe that food is not just about sustenance; it's an experience
+         that brings people together.With a vision to create a place where flavors from around 
+         the world converge and guests feel at home.At food country, we are committed to providing
+          an unforgettable dining experience.
+          <br>
+        Culinary Excellence: Our talented team of chefs is dedicated to crafting dishes that
+         tantalize your taste buds. Using only the freshest, locally sourced ingredients,
+          we aim to create culinary masterpieces that blend innovation with tradition.
+        </br>
+        Inviting Ambiance: Our cozy and inviting ambiance is designed to make you feel right at home.
+         Whether you're celebrating a special occasion or simply enjoying a casual meal, 
+          offers the perfect setting for every moment. 
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Dine-In Service: Customers can visit the restaurant and enjoy their meals at the establishment. 
+          This often includes table service, where waitstaff take orders and serve food to customers.</li>
+
+        <li>Take-Out Service: Customers can order food and take it with them to consume elsewhere.
+             Take-out orders are usually packaged to ensure the food remains fresh during transport.</li>
+             
+        <li>Dine-In Service: Customers can visit the restaurant and enjoy their meals at the establishment.
+           This often includes table service, where waitstaff take orders and serve food to customers.</li>
+
+        <li>Take-Out Service: Customers can order food and take it with them to consume elsewhere. 
+          Take-out orders are usually packaged to ensure the food remains fresh during transport.</li>    
+
+        <li>Delivery Service: Restaurants can offer delivery options, allowing customers to place orders
+        for delivery to their homes or offices. This service may be provided by the restaurant's own delivery
+         team or through third-party delivery partners.</li>
+
+        <li>Catering Service: Restaurants can offer catering services for events and gatherings. 
+          This involves preparing and delivering food for a specified number of guests at off-site locations.</li>
+
+        <li>Buffet Service: Some restaurants provide buffet-style dining, where customers pay a fixed price and
+           can serve themselves from a wide variety of dishes.</li>
+
+        <li>Online Ordering: Restaurants may have an online ordering system, allowing customers to place their
+           orders through the restaurant's website or mobile app.</li>
+           
+        <li>Reservations: For busy restaurants, reservation services can be offered, allowing customers to book
+           a table in advance to ensure they have a spot during peak hours.</li>
+
+        <li>Private Dining/Event Space: Restaurants with ample space may offer private dining rooms or event spaces for
+           special occasions and gatherings.</li>
+
+        <li>Entertainment: Some restaurants offer live music, themed nights, or other entertainment options to enhance the dining experience.</li>
+
+        <li>Special Menus: Restaurants can create special menus for holidays, seasonal ingredients, or dietary preferences
+           (e.g., vegetarian, vegan, gluten-free).</li>
+
+        <li>Cooking Classes: Some restaurants host cooking classes, where customers can learn to prepare dishes 
+          from the restaurant's menu under the guidance of chefs.</li> 
+
+        <li>Loyalty Programs: Restaurants can implement loyalty programs to reward frequent customers
+           with discounts, special offers, or exclusive perks.</li>
+
+        <li>Customer Feedback and Support: Providing channels for customer feedback and support can help restaurants
+           improve their services and address any issues or concerns.
+        </li> 
+             
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: contact@foodcountry.com</p>
+      <p>Phone: +1 123-456-7890</p>
+
+      <h2>For Ordering</h2>
+      <p>Phone: +91 9876543011</p>
+
+      <h2>Feedback</h2>
+      <p>Email: feedback@foodcountry.com</p>
+      <p>Phone: +91 89763124599</p>
+
+
+    </section>
+  </main>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('show');
+      });
+
+      const sectionToShow = document.getElementById(sectionId);
+      sectionToShow.classList.add('show');
+    }
+  </script>
+</body>
+</html>
